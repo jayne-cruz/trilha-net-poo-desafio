@@ -22,26 +22,25 @@ Você deve criar as suas classes de acordo com o diagrama abaixo:
 Neste projeto, implementei um sistema em .NET para a abstração de smartphones, seguindo os princípios da programação orientada a objetos. O foco foi a criação de classes específicas para dois tipos de celulares: Nokia e iPhone, derivadas da classe abstrata Smartphone.
 
 Estrutura do Código
-Classe Abstrata Smartphone:
+- Classe Abstrata Smartphone:
+  - Serve como base para as classes Nokia e Iphone.
+  - Define a estrutura básica de um smartphone, incluindo atributos como número, modelo, IMEI e memória.
 
-Serve como base para as classes Nokia e Iphone.
-Define a estrutura básica de um smartphone, incluindo atributos como número, modelo, IMEI e memória.
-Classe Nokia:
+- Classe Nokia:
+  - Herda de Smartphone.
+  - Implementa métodos específicos para celulares da marca Nokia, como InstalarAplicativo.
+  - Inclui funcionalidades como ligar, enviar mensagens de texto e instalar aplicativos.
 
-Herda de Smartphone.
-Implementa métodos específicos para celulares da marca Nokia, como InstalarAplicativo.
-Inclui funcionalidades como ligar, enviar mensagens de texto e instalar aplicativos.
-Classe Iphone:
+- Classe Iphone:
+  - Herda de Smartphone.
+  - Personaliza o comportamento para dispositivos iPhone, com métodos sobrescritos como InstalarAplicativo.
+  - Possui funcionalidades como ligar, receber chamadas e instalar aplicativos.
+  - Funcionalidades Implementadas
 
-Herda de Smartphone.
-Personaliza o comportamento para dispositivos iPhone, com métodos sobrescritos como InstalarAplicativo.
-Possui funcionalidades como ligar, receber chamadas e instalar aplicativos.
-Funcionalidades Implementadas
-Teste com Smartphone Nokia:
+- Teste com Smartphone Nokia:
+  - Criação de um objeto Nokia com atributos específicos como número, modelo, IMEI e memória.
+  - Execução de métodos como ligar, instalar o aplicativo "Whatsapp" e enviar mensagens de texto.
 
-Criação de um objeto Nokia com atributos específicos como número, modelo, IMEI e memória.
-Execução de métodos como ligar, instalar o aplicativo "Whatsapp" e enviar mensagens de texto.
-Teste com Smartphone Iphone:
-
-Criação de um objeto Iphone com características definidas, como número, modelo, IMEI e memória.
-Realização de ações como ligar, instalar o aplicativo "Facebook" e receber chamadas.
+- Teste com Smartphone Iphone:
+  - Criação de um objeto Iphone com características definidas, como número, modelo, IMEI e memória.
+  - Realização de ações como ligar, instalar o aplicativo "Facebook" e receber chamadas.
